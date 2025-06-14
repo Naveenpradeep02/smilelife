@@ -500,3 +500,148 @@ footer h2 {
   color: var(--primary-color);
   padding: 20px;
 }
+.mobile-navigation {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.337);
+  padding: 20px 0px;
+  display: none;
+}
+.mobile-navigation .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-navigation .logo img {
+  width: 80px;
+}
+.mobile-navigation i {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.open-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close {
+  display: none;
+}
+.mobile-menu-list {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  background-color: var(--sand-color);
+  width: 100%;
+  height: 100vh;
+}
+.mobile-menu-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+  margin: 10px 0px;
+}
+.mobile-menu-list ul li {
+  list-style: none;
+}
+.mobile-menu-list ul li a {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.mobile-sub-menu {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 575px) {
+  .navigation {
+    display: none;
+  }
+  .mobile-navigation {
+    display: block;
+  }
+  .hero p {
+    width: 100%;
+  }
+  .counter .container {
+    width: 80%;
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 0;
+    padding: 10px 0px;
+  }
+  .box1 {
+    height: auto;
+    border: none;
+  }
+  .items {
+    display: block;
+    padding-top: 50px;
+  }
+  .hero h2 {
+    font-size: 36px;
+  }
+  .section1 .container,
+  .section2 .container,
+  .testimonial-container,
+  .footer-container,
+  .profile-cards {
+    grid-template-columns: 1fr;
+  }
+  .center-box {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .item-box {
+    margin-bottom: 20px;
+  }
+  .cta h3,
+  .section2 h2,
+  .section3 h2,
+  footer h2 {
+    text-align: center;
+    font-size: 32px;
+    padding: 0px 20px;
+  }
+  .team {
+    width: 100%;
+  }
+  .section3 form input {
+    width: 100%;
+  }
+  .section3 form textarea {
+    width: 100%;
+  }
+  .section3 .sub-para,
+  .section3 .sub-para,
+  .section2 h2,
+  .section2 .sub-para,
+  .section3 h2,
+  .section3 .sub-para {
+    padding: 0px 20px;
+  }
+  .footer-box {
+    border: none;
+  }
+  .footer-container {
+    gap: 30px;
+  }
+  .copy-rights {
+    padding: 20px;
+  }
+  .copy-rights p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}

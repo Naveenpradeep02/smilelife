@@ -1,7 +1,9 @@
 const subMenu = document.querySelector(".sub-menu");
 
 const handleMenu = () => {
-  subMenu.classList.toggle("show-sub-menu");
+  if (subMenu) {
+    subMenu.classList.toggle("show-sub-menu");
+  }
 };
 
 const slider = document.querySelectorAll(".hero-container .items");
@@ -89,3 +91,25 @@ window.addEventListener("load", () => {
 // Optional: pause auto scroll on hover
 slideContainer.addEventListener("mouseenter", stopAutoScroll);
 slideContainer.addEventListener("mouseleave", startAutoScroll);
+
+const close = document.querySelector(".close");
+const open = document.querySelector(".open");
+
+const mobileMenu = document.querySelector(".mobile-menu-list");
+const mobileSubMenu = document.querySelector(".mobile-sub-menu");
+
+const showMenu = () => {
+  open.classList.add("hide");
+  close.classList.add("show");
+  mobileMenu.classList.add("show");
+};
+
+const closeMenu = () => {
+  close.classList.remove("show");
+  open.classList.remove("hide");
+  mobileMenu.classList.remove("show");
+};
+
+const handleSubMenu = () => {
+  mobileSubMenu.classList.toggle("show");
+};
