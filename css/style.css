@@ -132,7 +132,7 @@ a {
 .hero h2 {
   line-height: 120%;
   font-size: 56px;
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 .hero p {
   width: 40%;
@@ -556,7 +556,24 @@ footer h2 {
 .show {
   display: block;
 }
-
+.item1 {
+  background: url(../img/Group\ 463.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item2 {
+  background: url(../img/banner2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item3 {
+  background: url(../img/banner3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 @media screen and (max-width: 575px) {
   .navigation {
     display: none;
