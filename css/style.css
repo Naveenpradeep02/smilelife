@@ -479,7 +479,53 @@ footer h2 {
   font-weight: 800;
   text-transform: uppercase;
 }
+/*  */
+.faq-section {
+  width: 80%;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
+.faq-section h2 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  padding: 24px 0;
+}
+.faq-item:not(:last-child) {
+  border-bottom: 2px solid var(--light-blue);
+}
+.faq-question {
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+}
+
+.faq-question.active::after {
+  content: "-";
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.6;
+}
 /*  */
 
 .profile-section {

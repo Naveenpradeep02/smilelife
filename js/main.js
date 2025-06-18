@@ -112,3 +112,26 @@ window.addEventListener("load", () => {
 // Optional: pause auto scroll on hover
 slideContainer.addEventListener("mouseenter", stopAutoScroll);
 slideContainer.addEventListener("mouseleave", startAutoScroll);
+
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach((question) => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling;
+    const isActive = question.classList.contains("active");
+
+    // Close all open answers
+    document
+      .querySelectorAll(".faq-answer")
+      .forEach((a) => (a.style.display = "none"));
+    document
+      .querySelectorAll(".faq-question")
+      .forEach((q) => q.classList.remove("active"));
+
+    // Toggle current
+    if (!isActive) {
+      answer.style.display = "block";
+      question.classList.add("active");
+    }
+  });
+});
