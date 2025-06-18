@@ -1,3 +1,24 @@
+const close = document.querySelector(".close");
+const open = document.querySelector(".open");
+
+const mobileMenu = document.querySelector(".mobile-menu-list");
+const mobileSubMenu = document.querySelector(".mobile-sub-menu");
+
+const showMenu = () => {
+  open.classList.add("hide");
+  close.classList.add("show");
+  mobileMenu.classList.add("show");
+};
+
+const closeMenu = () => {
+  close.classList.remove("show");
+  open.classList.remove("hide");
+  mobileMenu.classList.remove("show");
+};
+
+const handleSubMenu = () => {
+  mobileSubMenu.classList.toggle("show");
+};
 const subMenu = document.querySelector(".sub-menu");
 
 const handleMenu = () => {
@@ -34,7 +55,7 @@ const nextBtn = document.querySelector(".next");
 
 const slidesToShow = 3;
 const totalSlides = slides.length;
-const slideWidth = slides[0].offsetWidth; // Each slide width
+const slideWidth = slides[0].offsetWidth;
 let currentIndex = 0;
 let autoScroll;
 
@@ -91,25 +112,3 @@ window.addEventListener("load", () => {
 // Optional: pause auto scroll on hover
 slideContainer.addEventListener("mouseenter", stopAutoScroll);
 slideContainer.addEventListener("mouseleave", startAutoScroll);
-
-const close = document.querySelector(".close");
-const open = document.querySelector(".open");
-
-const mobileMenu = document.querySelector(".mobile-menu-list");
-const mobileSubMenu = document.querySelector(".mobile-sub-menu");
-
-const showMenu = () => {
-  open.classList.add("hide");
-  close.classList.add("show");
-  mobileMenu.classList.add("show");
-};
-
-const closeMenu = () => {
-  close.classList.remove("show");
-  open.classList.remove("hide");
-  mobileMenu.classList.remove("show");
-};
-
-const handleSubMenu = () => {
-  mobileSubMenu.classList.toggle("show");
-};
