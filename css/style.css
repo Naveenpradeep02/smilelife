@@ -209,9 +209,12 @@ a {
   background-color: var(--sand-color);
   padding: 60px 0px;
 }
+
 .section2 h2,
+.section2 h4,
 .section2 .sub-para,
 .section3 h2,
+.section3 h4,
 .section3 .sub-para {
   text-align: center;
   margin-bottom: 20px;
@@ -245,11 +248,16 @@ a {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  gap: 30px;
 }
 .item-box {
   background-color: var(--white-color);
   padding: 24px;
   border-radius: 12px;
+}
+.bot-box {
+  width: 400px;
+  margin: 20px auto;
 }
 .section3 {
   margin: 80px 0px;
@@ -585,6 +593,9 @@ footer h2 {
   background-position: center;
 }
 @media screen and (max-width: 575px) {
+  .bot-box {
+    width: 85%;
+  }
   .navigation {
     display: none;
   }

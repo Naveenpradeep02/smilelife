@@ -29,7 +29,7 @@ const handleMenu = () => {
 
 const slider = document.querySelectorAll(".hero-container .items");
 let currentSlide = 0;
-const slideInterval = 5000; // 3 seconds
+const slideInterval = 3000;
 
 function showSlide(index) {
   slider.forEach((slide, i) => {
