@@ -53,11 +53,16 @@ const slides = document.querySelectorAll(".slide");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 
-const slidesToShow = 3;
-const totalSlides = slides.length;
-const slideWidth = slides[0].offsetWidth;
+let slidesToShow = window.innerWidth <= 768 ? 1 : 3; // default
+let slideWidth = slides[0].offsetWidth;
 let currentIndex = 0;
 let autoScroll;
+
+function updateSliderSettings() {
+  slidesToShow = window.innerWidth <= 768 ? 1 : 3;
+  slideWidth = slides[0].offsetWidth;
+  updateSliderPosition();
+}
 
 function updateSliderPosition() {
   slideContainer.style.transform = `translateX(-${
@@ -77,7 +82,7 @@ function stopAutoScroll() {
 
 function moveNext() {
   currentIndex += slidesToShow;
-  if (currentIndex >= totalSlides) {
+  if (currentIndex >= slides.length) {
     currentIndex = 0;
   }
   updateSliderPosition();
@@ -86,7 +91,7 @@ function moveNext() {
 function movePrev() {
   currentIndex -= slidesToShow;
   if (currentIndex < 0) {
-    currentIndex = Math.max(0, totalSlides - slidesToShow);
+    currentIndex = Math.max(0, slides.length - slidesToShow);
   }
   updateSliderPosition();
 }
@@ -103,13 +108,16 @@ prevBtn.addEventListener("click", () => {
   startAutoScroll();
 });
 
-// Initialize
+window.addEventListener("resize", () => {
+  updateSliderSettings();
+});
+
 window.addEventListener("load", () => {
-  updateSliderPosition();
+  updateSliderSettings();
   startAutoScroll();
 });
 
-// Optional: pause auto scroll on hover
+// Optional pause on hover
 slideContainer.addEventListener("mouseenter", stopAutoScroll);
 slideContainer.addEventListener("mouseleave", startAutoScroll);
 

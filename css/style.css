@@ -533,12 +533,39 @@ footer h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.section7 .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section7 .right img {
+  width: 300px;
+  margin: auto;
+}
 .section7 {
   margin: 50px 0px;
 }
 .section7 .left ul li {
   list-style: none;
   margin-bottom: 10px;
+}
+.fet-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 50px auto;
+}
+.fet-box {
+  padding: 20px;
+  background-color: var(--light-blue);
+  border-radius: 12px;
+}
+.fet-box h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+.fet-box h4 {
+  margin-bottom: 20px;
 }
 /*  */
 
@@ -700,7 +727,9 @@ footer h2 {
   .section2 .container,
   .testimonial-container,
   .footer-container,
-  .profile-cards {
+  .profile-cards,
+  .section7 .container,
+  .fet-boxes {
     grid-template-columns: 1fr;
   }
   .section1 {
@@ -761,4 +790,19 @@ footer h2 {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+}
+#slideContainer {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%; /* This ensures each slide takes full width */
+}
+
+@media screen and (min-width: 769px) {
+  .slide {
+    width: calc(100% / 3); /* For 3 slides per row on desktop */
+  }
 }
