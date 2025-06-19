@@ -923,7 +923,12 @@ footer h2 {
   .footer-container,
   .profile-cards,
   .section7 .container,
-  .fet-boxes {
+  .fet-boxes,
+  .profile-section .container,
+  .profile-section4 .container,
+  .profile-section5 .container,
+  .profile-section7 .container,
+  .d-boxes {
     grid-template-columns: 1fr;
   }
   .section1 {
@@ -940,7 +945,8 @@ footer h2 {
   .cta h3,
   .section2 h2,
   .section3 h2,
-  footer h2 {
+  footer h2,
+  .profile-section h2 {
     text-align: center;
     font-size: 32px;
     padding: 0px 20px;
@@ -965,6 +971,13 @@ footer h2 {
   .section3 .sub-para {
     padding: 0px 20px;
   }
+  .profile-section h5 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .test-section {
+    margin: 0;
+  }
   .footer-box {
     border: none;
   }
@@ -976,6 +989,9 @@ footer h2 {
   }
   .copy-rights p {
     font-size: 12px;
+  }
+  .para {
+    width: 100%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
