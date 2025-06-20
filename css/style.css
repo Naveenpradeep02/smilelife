@@ -11,6 +11,9 @@
   --sand-color: #e8dccf;
   --light-blue: #ebf8ff;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -303,7 +306,7 @@ a {
   top: 50%;
   transform: translateY(-50%);
   font-size: 24px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: var(--light-blue);
   border: none;
   cursor: pointer;
   padding: 10px;
