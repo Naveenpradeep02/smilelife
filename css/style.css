@@ -212,6 +212,8 @@ a {
 .section1 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 50px;
 }
 .section2 {
   background-color: var(--sand-color);
@@ -239,6 +241,10 @@ a {
 .section2 .container {
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
+  gap: 40px;
+}
+.section1 .container .left img {
+  width: 100%;
 }
 .two {
   display: flex;
@@ -246,10 +252,12 @@ a {
   justify-content: center;
 }
 .center-box {
-  width: 400px;
-  height: 400px;
-  background-color: var(--white-color);
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-box img {
+  width: 80%;
 }
 .one {
   display: flex;
@@ -485,13 +493,18 @@ footer h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url(../img/best-dental-in-chenai-h1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-btn {
   padding: 20px 40px;
   font-size: 24px;
-  border: 4px solid var(--primary-color);
+  border: 4px solid var(--sand-color);
   font-weight: 800;
   text-transform: uppercase;
+  color: var(--white-color);
 }
 .card-container {
   display: flex;
@@ -601,6 +614,7 @@ footer h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
+  margin-bottom: 50px;
 }
 
 .review-card {
@@ -684,6 +698,7 @@ footer h2 {
 .section7 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 .section7 .right {
   display: flex;
@@ -691,7 +706,7 @@ footer h2 {
   justify-content: center;
 }
 .section7 .right img {
-  width: 300px;
+  width: 100%;
   margin: auto;
 }
 .section7 {
@@ -729,6 +744,7 @@ footer h2 {
 .profile-section4 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .profile-section h2 {
@@ -742,6 +758,9 @@ footer h2 {
 }
 .profile-section p {
   margin-bottom: 20px;
+}
+.profile-section img {
+  width: 100%;
 }
 .profile-section3 {
   padding: 60px 0px;
@@ -757,6 +776,9 @@ footer h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+}
+.profile-section4 img {
+  width: 100%;
 }
 .profile-section5 .container,
 .profile-section7 .container {
@@ -882,6 +904,18 @@ footer h2 {
   background-size: cover;
   background-position: center;
 }
+.item4 {
+  background: url(../img/best-dental-in-chenai-p5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item5 {
+  background: url(../img/best-dental-in-chenai-p4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 @media screen and (max-width: 575px) {
   .bot-box {
     width: 85%;
@@ -934,9 +968,8 @@ footer h2 {
   .section1 {
     margin-top: 500px;
   }
-  .center-box {
-    width: 300px;
-    height: 300px;
+  .center-box img {
+    width: 100%;
     margin-bottom: 20px;
   }
   .item-box {
@@ -956,6 +989,17 @@ footer h2 {
   }
   .team {
     width: 100%;
+  }
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item4 {
+    background: url(../img/best-dental-in-chenai-c1.png);
+  }
+  .white-btn {
+    font-size: 12px;
+    font-weight: 600;
   }
   .section3 form input {
     width: 100%;
@@ -992,6 +1036,12 @@ footer h2 {
   }
   .para {
     width: 100%;
+  }
+  .faq-section {
+    width: 100%;
+  }
+  .hero-btn {
+    font-size: 18px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
