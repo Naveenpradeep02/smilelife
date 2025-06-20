@@ -1048,12 +1048,270 @@ footer h2 {
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  .bot-box {
+    width: 85%;
+  }
+  .navigation {
+    display: none;
+  }
+  .mobile-navigation {
+    display: block;
+  }
+  .hero p {
+    width: 100%;
+  }
+  .counter {
+    position: relative;
+    top: -100px;
+  }
+  .counter .container {
+    width: 80%;
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 0;
+    padding: 10px 0px;
+  }
+  .box1 {
+    height: auto;
+    border: none;
+  }
+  .items {
+    display: block;
+    padding-top: 50px;
+  }
+  .hero h2 {
+    font-size: 36px;
+  }
+  .section1 .container,
+  .section2 .container,
+  .testimonial-container,
+  .footer-container,
+  .profile-cards,
+  .section7 .container,
+  .fet-boxes,
+  .profile-section .container,
+  .profile-section4 .container,
+  .profile-section5 .container,
+  .profile-section7 .container,
+  .d-boxes {
+    grid-template-columns: 1fr;
+  }
+  .section1 {
+    margin-top: 500px;
+  }
+  .center-box img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .item-box {
+    margin-bottom: 20px;
+  }
+  .cta h3,
+  .section2 h2,
+  .section3 h2,
+  footer h2,
+  .profile-section h2 {
+    text-align: center;
+    font-size: 32px;
+    padding: 0px 20px;
+  }
+  .cta p {
+    width: 90%;
+  }
+  .team {
+    width: 100%;
+  }
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item4 {
+    background: url(../img/best-dental-in-chenai-c1.png);
+  }
+  .white-btn {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .section3 form input {
+    width: 100%;
+  }
+  .section3 form textarea {
+    width: 100%;
+  }
+  .section3 .sub-para,
+  .section3 .sub-para,
+  .section2 h2,
+  .section2 .sub-para,
+  .section3 h2,
+  .section3 .sub-para {
+    padding: 0px 20px;
+  }
+  .profile-section h5 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .test-section {
+    margin: 0;
+  }
+  .footer-box {
+    border: none;
+  }
+  .footer-container {
+    gap: 30px;
+  }
+  .copy-rights {
+    padding: 20px;
+  }
+  .copy-rights p {
+    font-size: 12px;
+  }
+  .para {
+    width: 100%;
+  }
+  .faq-section {
+    width: 100%;
+  }
+  .hero-btn {
+    font-size: 18px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .bot-box {
+    width: 85%;
+  }
+  .navigation {
+    display: none;
+  }
+  .mobile-navigation {
+    display: block;
+  }
+  .hero p {
+    width: 100%;
+  }
+  .counter {
+    position: relative;
+    top: -100px;
+  }
+  .counter .container {
+    width: 80%;
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 0;
+    padding: 10px 0px;
+  }
+  .box1 {
+    height: auto;
+    border: none;
+  }
+  .items {
+    display: block;
+    padding-top: 50px;
+  }
+  .hero h2 {
+    font-size: 36px;
+  }
+  .section1 .container,
+  .section2 .container,
+  .testimonial-container,
+  .footer-container,
+  .profile-cards,
+  .section7 .container,
+  .fet-boxes,
+  .profile-section .container,
+  .profile-section4 .container,
+  .profile-section5 .container,
+  .profile-section7 .container,
+  .d-boxes {
+    grid-template-columns: 1fr;
+  }
+  .section1 {
+    margin-top: 500px;
+  }
+  .center-box img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .item-box {
+    margin-bottom: 20px;
+  }
+  .cta h3,
+  .section2 h2,
+  .section3 h2,
+  footer h2,
+  .profile-section h2 {
+    text-align: center;
+    font-size: 32px;
+    padding: 0px 20px;
+  }
+  .cta p {
+    width: 90%;
+  }
+  .team {
+    width: 100%;
+  }
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item4 {
+    background: url(../img/best-dental-in-chenai-c1.png);
+  }
+  .white-btn {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .section3 form input {
+    width: 100%;
+  }
+  .section3 form textarea {
+    width: 100%;
+  }
+  .section3 .sub-para,
+  .section3 .sub-para,
+  .section2 h2,
+  .section2 .sub-para,
+  .section3 h2,
+  .section3 .sub-para {
+    padding: 0px 20px;
+  }
+  .profile-section h5 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .test-section {
+    margin: 0;
+  }
+  .footer-box {
+    border: none;
+  }
+  .footer-container {
+    gap: 30px;
+  }
+  .copy-rights {
+    padding: 20px;
+  }
+  .copy-rights p {
+    font-size: 12px;
+  }
+  .para {
+    width: 100%;
+  }
+  .faq-section {
+    width: 100%;
+  }
+  .hero-btn {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
 }
+
+/*  */
 #slideContainer {
   display: flex;
   transition: transform 0.5s ease-in-out;
