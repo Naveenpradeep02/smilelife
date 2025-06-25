@@ -8,7 +8,8 @@
 :root {
   --primary-color: #41b0a3;
   --white-color: #fff;
-  --sand-color: #e8dccf;
+  /* --sand-color: #e8dccf; */
+  --sand-color: #fff;
   --light-blue: #ebf8ff;
 }
 html {
@@ -51,6 +52,8 @@ a {
   color: var(--primary-color);
   position: relative;
   transition: all 0.4s ease-in-out;
+  font-size: 18px;
+  font-weight: 500;
 }
 .btn {
   padding: 10px 30px;
@@ -176,7 +179,7 @@ a {
   height: 200px;
   border-radius: 24px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding-top: 20px;
   padding-right: 10px;
