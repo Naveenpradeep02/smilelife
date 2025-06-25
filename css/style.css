@@ -202,7 +202,7 @@ a {
   color: var(--white-color);
 }
 .section1 {
-  margin-top: 150px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 .section1 h1 {
@@ -215,11 +215,33 @@ a {
 .section1 p {
   margin-bottom: 20px;
 }
-.section1 .container {
+.startic {
+  background: var(--light-blue);
+}
+.section1 .container,
+.startic .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-top: 50px;
+}
+.set-img img {
+  width: 100%;
+}
+.set-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.startic .container {
+  margin-top: 0px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.set-text h3 {
+  margin-bottom: 20px;
 }
 .section2 {
   background-color: var(--sand-color);
@@ -249,6 +271,7 @@ a {
   grid-template-columns: 0.5fr 1fr 0.5fr;
   gap: 40px;
 }
+
 .section1 .container .left img {
   width: 100%;
 }
@@ -968,11 +991,12 @@ footer h2 {
   .profile-section4 .container,
   .profile-section5 .container,
   .profile-section7 .container,
-  .d-boxes {
+  .d-boxes,
+  .startic .container {
     grid-template-columns: 1fr;
   }
   .section1 {
-    margin-top: 500px;
+    margin-top: 50px;
   }
   .center-box img {
     width: 100%;
@@ -1096,7 +1120,8 @@ footer h2 {
   .profile-section4 .container,
   .profile-section5 .container,
   .profile-section7 .container,
-  .d-boxes {
+  .d-boxes,
+  .startic .container {
     grid-template-columns: 1fr;
   }
   .section1 {
@@ -1224,7 +1249,8 @@ footer h2 {
   .profile-section4 .container,
   .profile-section5 .container,
   .profile-section7 .container,
-  .d-boxes {
+  .d-boxes,
+  .startic .container {
     grid-template-columns: 1fr;
   }
   .section1 {
