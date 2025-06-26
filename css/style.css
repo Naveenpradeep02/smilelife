@@ -8,8 +8,7 @@
 :root {
   --primary-color: #41b0a3;
   --white-color: #fff;
-  /* --sand-color: #e8dccf; */
-  --sand-color: #fff;
+  --sand-color: #e8dccf;
   --light-blue: #ebf8ff;
 }
 html {
@@ -217,22 +216,22 @@ a {
 }
 .startic {
   background: var(--light-blue);
+  padding: 50px 0px;
 }
 .section1 .container,
 .startic .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  margin-top: 50px;
+  margin: 50px auto;
 }
 .set-img img {
   width: 100%;
 }
 .set-text {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  text-align: center;
   flex-direction: column;
 }
 .startic .container {
@@ -310,7 +309,7 @@ a {
 .slider-wrapper {
   position: relative;
   overflow: hidden;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
 }
 .slide-container {
@@ -665,17 +664,26 @@ footer h2 {
   color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
-
 .text {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 0.8rem;
 }
-
 .author {
   font-style: italic;
   color: #555;
   text-align: right;
+}
+.fet-img {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.fet-s-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 /*  */
 .faq-section {
