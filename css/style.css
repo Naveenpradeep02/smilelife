@@ -8,7 +8,8 @@
 :root {
   --primary-color: #41b0a3;
   --white-color: #fff;
-  --sand-color: #e8dccf;
+  /* --sand-color: #e8dccf; */
+  --sand-color: #ebf8ff;
   --light-blue: #ebf8ff;
 }
 html {
@@ -304,7 +305,13 @@ a {
   margin: 20px auto;
 }
 .section3 {
+  padding: 80px 0px;
+  background: var(--sand-color);
   margin: 80px 0px;
+}
+.dun-section {
+  background-color: var(--white-color);
+  padding: 0px;
 }
 .slider-wrapper {
   position: relative;
@@ -677,13 +684,18 @@ footer h2 {
 .fet-img {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
   gap: 20px;
 }
 .fet-s-img img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
+}
+.fet-t {
+  text-align: center;
 }
 /*  */
 .faq-section {
@@ -761,8 +773,15 @@ footer h2 {
 }
 .fet-box {
   padding: 20px;
-  background-color: var(--light-blue);
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 16px rgba(97, 97, 97, 0.21);
+  transition: all 0.4s ease-in-out;
+}
+.fet-box:hover {
   border-radius: 12px;
+  background-color: var(--light-blue);
+  box-shadow: 0px 0px 16px rgba(97, 97, 97, 0.21);
+  transition: all 0.4s ease-in-out;
 }
 .fet-box h3 {
   color: var(--primary-color);
@@ -770,6 +789,9 @@ footer h2 {
 }
 .fet-box h4 {
   margin-bottom: 20px;
+}
+.fet-box p {
+  text-align: center;
 }
 .cta-btns {
   width: 100%;
