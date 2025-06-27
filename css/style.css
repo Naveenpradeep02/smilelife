@@ -48,11 +48,10 @@ a {
   list-style: none;
 }
 .menus ul li a {
-  font-size: 14px;
   color: var(--primary-color);
   position: relative;
   transition: all 0.4s ease-in-out;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 }
 .btn {
