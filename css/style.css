@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&family=Libertinus+Math&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Libertinus Math", system-ui;
 }
 a {
   text-decoration: none;
@@ -208,9 +208,10 @@ a {
 .section1 h1 {
   font-size: 32px;
   color: var(--primary-color);
+  margin-bottom: 20px;
 }
 .section1 h3 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .section1 p {
   margin-bottom: 20px;
@@ -240,7 +241,9 @@ a {
   padding-top: 60px;
   padding-bottom: 20px;
 }
-.set-text h3 {
+.set-text h2 {
+  color: var(--primary-color);
+  font-size: 30px;
   margin-bottom: 20px;
 }
 .section2 {
@@ -307,7 +310,7 @@ a {
 .section3 {
   padding: 80px 0px;
   background: var(--sand-color);
-  margin: 80px 0px;
+  margin: 40px 0px;
 }
 .dun-section {
   background-color: var(--white-color);
@@ -397,13 +400,19 @@ a {
   gap: 10px;
 }
 .section3 form input {
-  width: 30%;
-  padding: 20px 10px;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 12px;
+  border: 2px solid var(--primary-color);
+  background-color: #0000000d;
 }
 .section3 form textarea {
-  width: 92%;
+  width: 100%;
   padding: 20px 10px;
   margin-bottom: 20px;
+  border-radius: 12px;
+  border: 2px solid var(--primary-color);
+  background-color: #0000000d;
 }
 .section3 .btn {
   border: none;
@@ -532,6 +541,11 @@ footer h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-hero h2 {
+  color: var(--white-color);
 }
 .hero-btn {
   padding: 20px 40px;
@@ -693,9 +707,17 @@ footer h2 {
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.227);
+  border: 2px solid var(--primary-color);
 }
 .fet-t {
   text-align: center;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 /*  */
 .faq-section {
@@ -791,7 +813,6 @@ footer h2 {
   margin-bottom: 20px;
 }
 .fet-box p {
-  text-align: center;
 }
 .cta-btns {
   width: 100%;
@@ -814,12 +835,12 @@ footer h2 {
 
 .profile-section h2 {
   font-size: 42px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: var(--primary-color);
 }
 .profile-section h5 {
   font-size: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .profile-section p {
   margin-bottom: 20px;
@@ -835,7 +856,15 @@ footer h2 {
   margin: 50px 0px;
 }
 .profile-section4 h2 {
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  font-size: 40px;
+}
+.profile-section4 h3 {
   margin-bottom: 10px;
+}
+.profile-section4 .right p {
+  margin-bottom: 30px;
 }
 .profile-cards {
   display: grid;
@@ -851,6 +880,16 @@ footer h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+.v-boxs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.v-boxs-img img {
+  width: 100%;
 }
 .p-box {
   background-color: var(--primary-color);
@@ -980,6 +1019,13 @@ footer h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.contact-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.bg-white {
+  background-color: var(--white-color);
 }
 @media screen and (max-width: 575px) {
   .bot-box {
