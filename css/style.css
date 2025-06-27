@@ -325,7 +325,7 @@ a {
 .section3 {
   padding: 80px 0px;
   background: var(--sand-color);
-  margin: 40px 0px;
+  margin: 20px 0px;
 }
 .dun-section {
   background-color: var(--white-color);
@@ -437,7 +437,10 @@ a {
 }
 .section6 {
   background-color: var(--light-blue);
-  padding: 60px 0px 80px 0px;
+  padding: 20px 0px;
+}
+.section3.p-top {
+  padding: 0px;
 }
 .section6 .container {
   width: 100%;
@@ -521,6 +524,7 @@ footer h2 {
 }
 .footer-contact a {
   color: #000;
+  text-transform: capitalize;
 }
 .footer-contact a i {
   font-size: 24px;
@@ -560,7 +564,9 @@ footer h2 {
   gap: 20px;
 }
 .section-hero h2 {
+  text-align: center;
   color: var(--white-color);
+  font-size: 40px;
 }
 .hero-btn {
   padding: 20px 40px;
@@ -891,7 +897,7 @@ footer h2 {
 }
 .profile-section5 .container,
 .profile-section7 .container {
-  margin: 100px auto;
+  margin: 20px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -1043,6 +1049,9 @@ footer h2 {
   background-color: var(--white-color);
 }
 @media screen and (max-width: 575px) {
+  .section-hero h2 {
+    font-size: 28px;
+  }
   .bot-box {
     width: 85%;
   }
