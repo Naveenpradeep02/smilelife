@@ -1094,6 +1094,9 @@ footer h2 {
   border-radius: 16px;
   box-shadow: 0 0px 12px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .review-box:hover {
