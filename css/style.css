@@ -541,6 +541,7 @@ footer h2 {
 .copy-rights p {
   text-align: center;
   color: var(--white-color);
+  text-transform: capitalize;
 }
 .copy-rights p a {
   color: var(--white-color);
@@ -1173,6 +1174,7 @@ footer h2 {
   .para {
     width: 100%;
   }
+
   .faq-section {
     width: 100%;
   }
