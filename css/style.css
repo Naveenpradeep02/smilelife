@@ -1162,7 +1162,7 @@ footer h2 {
 }
 
 .view-all-btn {
-  background-color: #00bcd4;
+  background-color: var(--primary-color);
   color: #fff;
   padding: 12px 24px;
   font-size: 15px;
