@@ -1102,7 +1102,8 @@ footer h2 {
   .profile-section5 .container,
   .profile-section7 .container,
   .d-boxes,
-  .startic .container {
+  .startic .container,
+  .contact-section {
     grid-template-columns: 1fr;
   }
   .section1 {
@@ -1232,7 +1233,8 @@ footer h2 {
   .profile-section5 .container,
   .profile-section7 .container,
   .d-boxes,
-  .startic .container {
+  .startic .container,
+  .contact-section {
     grid-template-columns: 1fr;
   }
   .section1 {
