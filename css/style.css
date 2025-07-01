@@ -16,6 +16,16 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  font-family: "Oswald", sans-serif;
+}
+body p,
+body .btn,
+.small-btn,
+.view-all-btn,
+.tech-desc,
+.white-btn,
+.faq-question,
+.faq-answer {
   font-family: "Montserrat", sans-serif;
 }
 a {
@@ -68,6 +78,7 @@ p {
   background-color: var(--primary-color);
   color: var(--white-color);
   width: fit-content;
+  text-transform: capitalize;
 }
 .small-btn {
   padding: 10px;
@@ -340,7 +351,7 @@ p {
   margin: 20px auto;
 }
 .section3 {
-  padding: 80px 0px;
+  padding: 30px 0px;
   background: var(--sand-color);
   margin: 20px 0px;
 }
@@ -431,13 +442,18 @@ p {
 .cta h3 {
   font-size: 42px;
   color: var(--white-color);
+  text-transform: capitalize;
+}
+.cta h2 {
+  text-transform: capitalize;
 }
 .cta p {
   margin-bottom: 20px;
-  width: 50%;
-  text-align: center;
+  width: 80%;
+  text-align: left;
   color: var(--white-color);
   margin: 20px auto;
+  padding-bottom: 20px;
 }
 .cta .btn {
   background-color: var(--white-color);
@@ -519,6 +535,9 @@ footer {
   padding: 60px 0px;
   background-color: var(--sand-color);
 }
+footer h2 {
+  text-transform: capitalize;
+}
 footer h2,
 footer p {
   text-align: center;
@@ -550,8 +569,8 @@ footer h2 {
 .footer-box2 {
   padding-left: 30px;
 }
-.profile-section .btn {
-  margin: 30px 0px;
+.profile-section p {
+  margin-bottom: 20px;
 }
 .social-container {
   display: flex;
@@ -904,16 +923,14 @@ footer h2 {
 
 .profile-section h2 {
   font-size: 42px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   color: var(--primary-color);
 }
 .profile-section h5 {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.profile-section p {
-  margin-bottom: 20px;
-}
+
 .profile-section img {
   width: 100%;
 }
@@ -950,12 +967,14 @@ footer h2 {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
+.profile-section5 .container {
+  align-items: center;
+  justify-content: center;
+}
 .v-boxs {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  align-items: center;
-  justify-content: center;
 }
 .v-boxs-img img {
   width: 100%;
@@ -1211,6 +1230,17 @@ footer h2 {
 .pic4 {
   background-color: rgb(226, 76, 43);
   color: white;
+}
+.profile-section .btn {
+  margin: 20px 0px;
+}
+.c-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-btn a {
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 575px) {
   .section-hero h2 {

@@ -324,12 +324,7 @@
       </div> -->
     </div>
     <!-- section 2 -->
-    <div class="container">
-      <div class="test-section">
-        <h2>Patient Reviews</h2>
-        <div class="review-grid" id="reviews"></div>
-      </div>
-    </div>
+
     <!-- section 2 -->
     <!-- section 3 -->
     <div class="section section2">
@@ -398,19 +393,17 @@
           Every smile you see here began with a decision
         </h3>
         <h2>
-          The decision to choose care that listens, heals, and transforms.
+          - The decision to choose care that listens, heals, and transforms.
         </h2>
         <p>
           <br />At Smile Life Dental Clinic, we know that behind every dental
           issue is a person with hope, hesitation, and the desire to feel whole
-          again. <br />
-          You’ve read their stories. You’ve seen what’s possible. Maybe you’re
-          still unsure — and that’s okay. Healing doesn’t start with perfection.
-          It starts with trust, with being heard, with someone holding space for
-          your journey. <br />
-          Whenever you're ready to take that first step, we’ll be here — ready
-          to welcome you with warmth, skill, and care that goes beyond the
-          surface.
+          again. You’ve read their stories. You’ve seen what’s possible. Maybe
+          you’re still unsure — and that’s okay. Healing doesn’t start with
+          perfection. It starts with trust, with being heard, with someone
+          holding space for your journey. Whenever you're ready to take that
+          first step, we’ll be here — ready to welcome you with warmth, skill,
+          and care that goes beyond the surface.
         </p>
         <a href="./contact.html" class="btn">Let us hear your story</a>
       </div>
@@ -419,9 +412,9 @@
     <!-- g-map -->
     <div class="g-map">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3907.4859327362437!2d80.1328036!3d13.0203898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAxJzEzLjQiTiA4MMKwMDcnNTguMSJF!5e1!3m2!1sen!2sin!4v1750845741890!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d244.21787690705494!2d80.1328695!3d13.0203836!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261bac786366b%3A0xc17d3d0bcc919e53!2sSmile%20Life%20Dental%20Clinic!5e1!3m2!1sen!2sin!4v1751360917548!5m2!1sen!2sin"
         width="100%"
-        height="450"
+        height="480"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
@@ -439,7 +432,9 @@
         </p>
         <div class="footer-container">
           <div class="footer-box">
-            <a href="./index.html"></a>
+            <a href="./index.html">
+              <img src="./img/color-logo.png" alt="" />
+            </a>
             <a href="./contact.html" class="btn">Make An Appointments</a>
           </div>
           <div class="footer-box2">
@@ -473,8 +468,7 @@
 
       <p>
         Copyright 2025. All Rights Reserved |
-        <a href="#">Smile life Dental Clinic</a> | Best Dental Implants Clinic
-        In Chennai
+        <a href="#">Smile life Dental Clinic</a> | Best Dental Clinic In Chennai
       </p>
       <br />
       <p>
@@ -486,77 +480,5 @@
     <!-- copy -->
     <!-- js -->
     <script src="./js/main.js"></script>
-    <script>
-      const reviews = [
-        {
-          title: "Root Canal Treatment",
-          text: "I walked in terrified, thinking a root canal would be painful. But the dentist made me feel at ease, and the entire process was smooth. I could eat normally the very next day!",
-          author: "Ramesh K.",
-        },
-        {
-          title: "Dental Implants",
-          text: "Losing a front tooth shattered my confidence. Smile Life gave me an implant that looks and feels just like the original. I can’t stop smiling now!",
-          author: "Anita V.",
-        },
-        {
-          title: "Crowns & Bridges",
-          text: "I had two broken teeth that made chewing difficult. The crown and bridge work they did was flawless, and I finally feel normal again!",
-          author: "George P.",
-        },
-        {
-          title: "Braces (Orthodontic Treatment)",
-          text: "Getting braces as an adult was intimidating, but the orthodontist was encouraging and kind. Now, my teeth are straight, and I love my smile!",
-          author: "Meena R.",
-        },
-        {
-          title: "Invisalign (Clear Aligners)",
-          text: "I didn’t want traditional braces. Their aligners were perfect for my job — clear, comfortable, and effective. People barely noticed I had them!",
-          author: "Shyam S.",
-        },
-        {
-          title: "Pediatric Dentistry",
-          text: "My son was nervous before his first dental visit, but the staff made it fun and friendly. Now he actually looks forward to check-ups!",
-          author: "Nandhini B.",
-        },
-        {
-          title: "Wisdom Tooth Extraction",
-          text: "My wisdom tooth was swollen and painful. They took care of it quickly and explained everything clearly. I healed faster than expected.",
-          author: "Ashwin R.",
-        },
-        {
-          title: "Periodontal Treatment (Gum Care)",
-          text: "I had bleeding gums for years and thought it was normal. After their treatment, my gums feel healthier, and the bleeding stopped completely.",
-          author: "Lakshmi S.",
-        },
-        {
-          title: "Full Mouth Rehabilitation",
-          text: "I had several missing and damaged teeth. Their team created a complete treatment plan, and today I feel like I have a brand-new smile.",
-          author: "Bharath K.",
-        },
-        {
-          title: "Tooth-Colored Fillings",
-          text: "I had cavities in my front teeth and was scared they'd look odd after filling. But the results are invisible — I couldn’t be happier!",
-          author: "Rekha T.",
-        },
-        {
-          title: "Teeth Whitening",
-          text: "I tried everything to fix my yellowed teeth, but nothing worked — until now. Just one visit made my smile 10x brighter!",
-          author: "Fathima J.",
-        },
-      ];
-
-      const reviewContainer = document.getElementById("reviews");
-
-      reviews.forEach((review) => {
-        const card = document.createElement("div");
-        card.className = "review-card";
-        card.innerHTML = `
-            <div class="title">${review.title}</div>
-            <div class="text">"${review.text}"</div>
-            <div class="author">— ${review.author}</div>
-          `;
-        reviewContainer.appendChild(card);
-      });
-    </script>
   </body>
 </html>
