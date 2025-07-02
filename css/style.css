@@ -25,7 +25,8 @@ body .btn,
 .tech-desc,
 .white-btn,
 .faq-question,
-.faq-answer {
+.faq-answer,
+.footer-contact a {
   font-family: "Montserrat", sans-serif;
 }
 a {
@@ -569,6 +570,9 @@ footer h2 {
 .footer-box2 {
   padding-left: 30px;
 }
+.footer-contact .con-email {
+  text-transform: lowercase;
+}
 .profile-section p {
   margin-bottom: 20px;
 }
@@ -592,6 +596,7 @@ footer h2 {
   color: #000;
   text-transform: capitalize;
 }
+
 .footer-contact a i {
   font-size: 24px;
   margin-right: 10px;
