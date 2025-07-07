@@ -174,7 +174,6 @@ p {
 }
 .hero {
   width: 100%;
-  height: 80vh;
   position: relative;
 }
 .hero .container {
@@ -1084,31 +1083,30 @@ footer h2 {
   display: block;
 }
 .item1 {
-  background: url(../img/banner2.png);
+  background: url(../img/10.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .item2 {
-  background: url(../img/banner3.png);
+  background: url(../img/11.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .item3 {
-  background: url(../img/Group\ 463.png);
+  background: url(../img/12.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .item4 {
-  background: url(../img/best-dental-in-chenai-p5.png);
-  background-repeat: no-repeat;
+  background: url(../img/13.jpg);
   background-size: cover;
   background-position: center;
 }
 .item5 {
-  background: url(../img/best-dental-in-chenai-p4.png);
+  background: url(../img/14.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1128,7 +1126,6 @@ footer h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
 }
-
 .review-box {
   background: #fff;
   padding: 25px 30px;
@@ -1139,31 +1136,26 @@ footer h2 {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .review-box:hover {
   transform: translateY(-5px);
 }
-
 .review-title {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 12px;
   color: #222;
 }
-
 .review-text {
   font-size: 15px;
   line-height: 1.6;
   color: #444;
   margin-bottom: 18px;
 }
-
 .review-footer {
   display: flex;
   align-items: start;
   gap: 12px;
 }
-
 .profile-pic {
   width: 45px;
   height: 45px;
@@ -1174,7 +1166,6 @@ footer h2 {
   justify-content: center;
   font-weight: 600;
 }
-
 .reviewer-info {
   display: flex;
   flex-direction: column;
@@ -1185,7 +1176,6 @@ footer h2 {
   color: #222;
   margin-bottom: 3px;
 }
-
 .stars {
   color: #fbbf24;
   margin-bottom: 5px;
@@ -1199,7 +1189,6 @@ footer h2 {
 .reviewed-for strong {
   color: #000;
 }
-
 .btn-container {
   text-align: center;
   margin-top: 40px;
@@ -1216,7 +1205,6 @@ footer h2 {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .view-all-btn:hover {
   background-color: var(--primary-color);
 }
@@ -1285,9 +1273,16 @@ footer h2 {
   .mobile-navigation {
     display: block;
   }
+  .hero {
+    width: 100%;
+  }
+  .hero-container {
+    height: 30vh;
+  }
   .hero p {
     width: 100%;
   }
+
   .counter {
     position: relative;
     top: -100px;
@@ -1356,7 +1351,7 @@ footer h2 {
   .item3,
   .item4,
   .item4 {
-    background: url(../img/best-dental-in-chenai-c1.png);
+    background-size: cover;
   }
   .white-btn {
     font-size: 12px;
@@ -1398,7 +1393,6 @@ footer h2 {
   .para {
     width: 100%;
   }
-
   .faq-section {
     width: 100%;
   }
@@ -1482,12 +1476,15 @@ footer h2 {
   .team {
     width: 100%;
   }
+  .hero-container {
+    height: 50vh;
+  }
   .item1,
   .item2,
   .item3,
   .item4,
   .item4 {
-    background: url(../img/best-dental-in-chenai-c1.png);
+    background-size: contain;
   }
   .white-btn {
     font-size: 12px;
@@ -1616,7 +1613,7 @@ footer h2 {
   .item3,
   .item4,
   .item4 {
-    background: url(../img/best-dental-in-chenai-c1.png);
+    background-size: contain;
   }
   .white-btn {
     font-size: 12px;
@@ -1665,7 +1662,6 @@ footer h2 {
     font-size: 18px;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 100%;
@@ -1673,23 +1669,20 @@ footer h2 {
   }
 }
 
-/*  */
 #slideContainer {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-
 .slide {
   flex: 0 0 auto;
-  width: 100%; /* This ensures each slide takes full width */
+  width: 100%;
 }
 
 @media screen and (min-width: 769px) {
   .slide {
-    width: calc(100% / 3); /* For 3 slides per row on desktop */
+    width: calc(100% / 3);
   }
 }
-
 .tech-section {
   display: flex;
   max-width: 1200px;
@@ -1700,7 +1693,6 @@ footer h2 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   flex-direction: row;
 }
-
 .tech-list {
   width: 35%;
   background: #f1f1f1;
@@ -1709,7 +1701,6 @@ footer h2 {
   flex-direction: column;
   gap: 15px;
 }
-
 .tech-list button {
   background: none;
   border: none;
@@ -1720,13 +1711,11 @@ footer h2 {
   transition: background 0.3s;
   border-radius: 8px;
 }
-
 .tech-list button:hover,
 .tech-list button.active {
   background: var(--primary-color);
   color: white;
 }
-
 .tech-content {
   width: 65%;
   padding: 30px;
@@ -1739,20 +1728,17 @@ footer h2 {
   border-radius: 10px;
   margin-bottom: 15px;
 }
-
 .tech-title {
   font-size: 42px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 .tech-subtitle {
   font-size: 16px;
   font-weight: bold;
   color: var(--primary-color);
   margin-bottom: 8px;
 }
-
 .tech-desc {
   font-size: 15px;
   line-height: 1.6;
@@ -1763,12 +1749,11 @@ footer h2 {
   display: flex;
   gap: 30px;
 }
-/* Responsive Layout */
+
 @media (max-width: 768px) {
   .tech-section {
     flex-direction: column;
   }
-
   .tech-content,
   .tech-list {
     width: 100%;
@@ -1777,7 +1762,6 @@ footer h2 {
   .tech-content {
     order: 1;
   }
-
   .tech-list {
     order: 2;
     flex-direction: row;
@@ -1786,14 +1770,12 @@ footer h2 {
     gap: 10px;
     padding: 15px;
   }
-
   .tech-list button {
     flex: 1 1 45%;
     text-align: center;
     font-size: 14px;
     padding: 10px;
   }
-
   .tech-content img {
     height: auto;
   }
