@@ -1083,30 +1083,30 @@ footer h2 {
   display: block;
 }
 .item1 {
-  background: url(../img/10.jpg);
+  background: url(../img/1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .item2 {
-  background: url(../img/11.jpg);
+  background: url(../img/2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .item3 {
-  background: url(../img/12.jpg);
+  background: url(../img/3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .item4 {
-  background: url(../img/13.jpg);
+  background: url(../img/4.jpg);
   background-size: cover;
   background-position: center;
 }
 .item5 {
-  background: url(../img/14.jpg);
+  background: url(../img/5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1277,7 +1277,7 @@ footer h2 {
     width: 100%;
   }
   .hero-container {
-    height: 30vh;
+    height: 25vh;
   }
   .hero p {
     width: 100%;
@@ -1346,13 +1346,17 @@ footer h2 {
   .team {
     width: 100%;
   }
+
   .item1,
   .item2,
   .item3,
   .item4,
-  .item4 {
-    background-size: cover;
+  .item5 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
+
   .white-btn {
     font-size: 12px;
     font-weight: 600;
