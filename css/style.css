@@ -258,7 +258,7 @@ p {
 }
 .startic {
   background: var(--light-blue);
-  padding: 50px 0px;
+  padding: 20px 0px;
 }
 .section1 .container,
 .startic .container {
@@ -532,7 +532,7 @@ p {
   text-align: center;
 }
 footer {
-  padding: 60px 0px;
+  padding: 40px 0px;
   background-color: var(--sand-color);
 }
 footer h2 {
@@ -550,7 +550,7 @@ footer h2 {
 .footer-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 40px 0px;
+  margin-top: 40px;
 }
 .footer-box {
   display: flex;
@@ -1258,6 +1258,11 @@ footer h2 {
   margin-bottom: 10px;
 }
 @media screen and (max-width: 575px) {
+  .mob-btn {
+    font-size: 14px;
+    font-weight: 800;
+    padding: 10px;
+  }
   .side2 img {
     width: 80px;
   }
@@ -1402,6 +1407,9 @@ footer h2 {
   }
   .hero-btn {
     font-size: 18px;
+  }
+  .profile-section h2 {
+    font-size: 28px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
