@@ -300,7 +300,7 @@ p {
 .section3 h4,
 .section3 .sub-para {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .section2 h2,
 .section3 h2 {
@@ -309,7 +309,7 @@ p {
 }
 .section2 .sub-para,
 .section3 .sub-para {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .section2 .container {
   display: grid;
@@ -1003,6 +1003,7 @@ footer h2 {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .dbox {
@@ -1306,9 +1307,16 @@ footer h2 {
 }
 .info-cont {
   display: flex;
+  flex-direction: row-reverse;
   gap: 20px;
 }
-
+.time {
+  display: flex;
+  align-items: center;
+}
+.time i {
+  margin-right: 10px;
+}
 .header-info a {
   color: var(--gold-color);
   display: flex;
