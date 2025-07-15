@@ -1293,6 +1293,8 @@ footer h2 {
   padding: 20px 0px;
   font-family: "Montserrat", sans-serif;
   background-color: var(--light-blue);
+  font-weight: 600;
+  color: var(--primary-color);
 }
 .header-info .container {
   display: flex;
