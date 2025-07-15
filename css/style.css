@@ -153,6 +153,10 @@ p {
 .show-sub-menu {
   display: block;
 }
+.outline {
+  border-left: 3px solid var(--primary-color);
+  padding-left: 5px;
+}
 .hero-container {
   position: relative;
   width: 100%;
