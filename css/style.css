@@ -323,7 +323,15 @@ header {
   grid-template-columns: 0.5fr 1fr 0.5fr;
   gap: 40px;
 }
-
+.profile-section4 .left,
+.profile-section4 .right,
+.v-boxs-img,
+.profile-section .right {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
 .section1 .container .left img {
   width: 100%;
 }
