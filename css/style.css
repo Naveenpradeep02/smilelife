@@ -26,7 +26,8 @@ body .btn,
 .white-btn,
 .faq-question,
 .faq-answer,
-.footer-contact a {
+.footer-contact a,
+.menus ul li a {
   font-family: "Montserrat", sans-serif;
 }
 a {
@@ -39,12 +40,14 @@ p {
   width: 85%;
   margin: auto;
 }
-
-.navigation {
-  padding: 20px 0px;
+header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
+  background-color: var(--white-color);
+}
+.navigation {
+  padding: 20px 0px;
 }
 .navigation .container {
   display: flex;
@@ -59,7 +62,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background-color: var(--light-blue);
+  /* background-color: var(--light-blue); */
   border-radius: 10px;
   padding: 15px;
 }
@@ -123,12 +126,12 @@ p {
   width: 100%;
 }
 .menus ul li a:hover {
-  background-color: var(--primary-color);
-  color: var(--white-color);
+  /* background-color: var(--primary-color);
+  color: var(--white-color); */
 }
 .menus ul li a.nav-active {
-  background-color: var(--primary-color);
-  color: var(--white-color);
+  /* background-color: var(--primary-color); */
+  /* color: var(--white-color); */
 }
 /* .menus ul li a:hover::after {
   content: "";
