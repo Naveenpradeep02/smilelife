@@ -586,6 +586,10 @@ footer h2 {
 }
 .footer-box2 {
   padding-left: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
 }
 .footer-contact .con-email {
   text-transform: lowercase;
@@ -663,7 +667,7 @@ footer h2 {
   font-size: 40px;
 }
 .hero-btn {
-  padding: 20px 40px;
+  padding: 10px 40px;
   font-size: 24px;
   border: 4px solid var(--sand-color);
   font-weight: 800;
@@ -1181,7 +1185,7 @@ footer h2 {
   padding: 20px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
 }
 .review-box {
