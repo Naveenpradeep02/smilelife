@@ -82,9 +82,16 @@ function stopAutoScroll() {
 
 function moveNext() {
   currentIndex += slidesToShow;
+  // if (currentIndex >= slides.length) {
+  //   currentIndex = 0;
+  // }
+
   if (currentIndex >= slides.length) {
     currentIndex = 0;
+  } else if (currentIndex > slides.length - slidesToShow) {
+    currentIndex = slides.length - slidesToShow;
   }
+
   updateSliderPosition();
 }
 

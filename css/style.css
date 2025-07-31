@@ -1419,6 +1419,9 @@ footer h2 {
   margin-bottom: 10px;
   text-align: start;
 }
+.slide-hiden {
+  display: flex;
+}
 @media screen and (max-width: 575px) {
   .left-doc {
     flex-direction: column;
@@ -1591,6 +1594,9 @@ footer h2 {
   }
   footer .container {
     width: 100%;
+  }
+  .slide-hiden {
+    display: none !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
